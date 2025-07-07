@@ -247,16 +247,108 @@ nav li {
     gap: 1rem;
 }
 
-.img1, .img2, .img3, .img4{
-  background-color:#121111;
- max-width: 105rem;
+.img1, .img2, .img3, .img4 {
+  background-color: #121111;
+  max-width: 105rem;
   width: 99%;
   height: 43rem;
   border-radius: 0.9rem;
   background-size: cover;
+  background-position: center;
   cursor: pointer;
+  position: relative; 
+  overflow: hidden; 
 }
-.img1{
-  background-image: url(example.png);
 
+
+.img1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000015; 
+  transition: background-color 0.3s ease;
+  z-index: 1;
 }
+
+.img1:hover::after {
+  background-color: #000000bd; 
+}
+
+
+.img1{
+  position: relative;
+  z-index: 2;
+}
+
+.img1 {
+  background-image: url('example.png');
+}
+
+.img2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000015; 
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.img2:hover::after {
+  background-color: #000000bd; 
+}
+
+
+.img2{
+  position: relative;
+  z-index: 2;
+}
+
+.img2 {
+  background-image: url('example.png');
+}
+
+.img3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000015; 
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.img3:hover::after {
+  background-color: #000000bd; 
+}
+
+
+.img3{
+  position: relative;
+  z-index: 2;
+}
+
+.img3 {
+  background-image: url('example.png');
+}
+.img4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000015; 
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.img4:hover::after {
+  background-color: #000000bd; 
+}
+
+
+.img4{
+  position: relative;
+  z-index: 2;
+}
+
+.img4 {
+  background-image: url('example.png');
+}
+
