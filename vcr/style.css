@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url(Satoshi-Variable.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Satoshi';
+    color: #FAFAFA;
+    background-color: #201C1C;
+    background-image: url(Group\ 59.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin:0;
+    height: 200vh;
+
+}
+nav{
+    background-color: #201C1C;
+    height: 8rem;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+.redirects{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+}
+img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+height: 4rem;
+}
+li{
+    display: flex;
+margin-inline: 1rem;
+}
+
+.section1 {
+    position: relative;
+    width: 200rem;
+    height: 50rem;
+    margin: 0 auto;
+    color: #FAFAFA;
+    font-family: 'Satoshi';
+  }
+  
+  .section1 h1, .section1 p, .section1 .button {
+    position: absolute;
+    color: #FAFAFA;
+    margin-left: 2.5%;
+  }
+  
+  .section1 h1 {
+    font-size: 5rem;
+    box-sizing: border-box;
+    width: 60rem;
+  }
+  
+  .section1 p {
+    top: 45%;
+    width: 80%;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    width: 51rem;
+  }
+  
+  .section1 .button {
+    top: 60%;
+    padding: 4.126rem 18.813rem;
+    background-color: #F21000;
+    border: none;
+    cursor: pointer;
+  }
+  
