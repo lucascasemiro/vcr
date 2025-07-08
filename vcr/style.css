@@ -67,7 +67,8 @@ nav li {
   position: relative;
   justify-self: center;
   align-self: start;
-  width: 105rem;
+  max-width: 105rem;
+  width: 90%;
   height: 55rem;
   margin: 0 auto;
   color: #FAFAFA;
@@ -75,30 +76,20 @@ nav li {
   box-sizing: border-box;
 }
 
-.section1 h1,
-.section1 p,
-.section1 .button {
-  color: #FAFAFA;
-
-}
 
 .section1 h1 {
   font-size: 4rem;
-  box-sizing: border-box;
-  width: 50rem;
   font-weight: 600;
-  margin-top: 7%;
-  margin-bottom: 1%;
+  margin-bottom: 3rem;
+  max-width: 40rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
 }
 
 .section1 p {
-
-  width: 80%;
   font-size: 1.3rem;
-  box-sizing: border-box;
-  width: 43rem;
-  font-weight: 400;
-
+  margin-bottom: 2rem;
+  max-width: 43rem;
 }
 
 .section1 .button {
@@ -110,7 +101,7 @@ nav li {
   padding: 1rem 2.7rem;
   border-radius: 1.1rem;
   font-weight: 700;
-  margin-top: 0.5%;
+  color: #FAFAFA;
 }
 
 .section1 span {
@@ -121,39 +112,29 @@ nav li {
   position: relative;
   justify-self: center;
   align-self: start;
-  width: 105rem;
-  height: 50rem;
+  max-width: 105rem;
+  width: 90%;
+  height: 40rem;
   margin: 0 auto;
   color: #FAFAFA;
   font-family: 'Satoshi';
   box-sizing: border-box;
 }
 
-.section2 h1,
-.section2 p {
-  position: absolute;
-  color: #FAFAFA;
-
-
-}
 
 .section2 h1 {
   font-size: 3.5rem;
-  box-sizing: border-box;
-  width: 50rem;
   font-weight: 600;
-  margin-top: 8%;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  max-width: 50rem;
 }
 
 .section2 p {
-  width: 80%;
   font-size: 1.3rem;
-  box-sizing: border-box;
-  width: 43rem;
-  font-weight: 400;
-  margin-top: 18.5%;
+  margin-bottom: 3rem;
+  max-width: 43rem;
 }
-
 .section2 span {
   font-weight: 400;
 }
@@ -235,7 +216,7 @@ nav li {
 .section4 h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: -0.3rem;
   max-width: 70rem;
 }
 
@@ -502,8 +483,16 @@ button {
   box-sizing:border-box;
   padding:2rem;
   outline: 0.2rem solid #352F2F;
+  transition: background-color 0.3s ease;
 }
-
+.step1:hover,
+.step2:hover,
+.step3:hover,
+.step4:hover,
+.step5:hover,
+.step6:hover {
+background-color: #F21000;
+}
 .title-step{
   font-size: 2.1rem;
   font-weight: 600;
@@ -520,4 +509,5 @@ button {
   justify-self: center;
   margin-top: 1rem;
 }
+
 
