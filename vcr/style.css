@@ -182,6 +182,7 @@ nav li {
   width: 100%;
   box-sizing: border-box;
   outline: 0.2rem solid #352F2F;
+  box-shadow: #1211118a 0rem 0rem 1rem;
 }
 
 .section3 span {
@@ -251,6 +252,7 @@ nav li {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  box-shadow: #12111181 0rem 0rem 1rem;
 }
 
 
@@ -440,11 +442,12 @@ button {
   align-self: start;
   max-width: 105rem;
   width: 80%;
-  height: 70rem;
+  height: fit-content;
   margin: 0 auto;
   color: #FAFAFA;
   font-family: 'Satoshi';
   box-sizing: border-box;
+  margin-bottom: 10%;
 }
 
 .section5 h1 {
@@ -483,6 +486,7 @@ button {
   padding: 2rem;
   outline: 0.2rem solid #352F2F;
   transition: background-color 0.3s ease;
+  box-shadow: #12111181 0rem 0rem 1rem;
 }
 
 .step1:hover,
@@ -515,15 +519,14 @@ button {
   position: relative;
   justify-self: center;
   align-self: start;
-  justify-content: center;
-  align-items: center;
   max-width: 105rem;
-  width: 100%;
-  height: 70rem;
+  width: 80%;
+  height: fit-content;
   margin: 0 auto;
   color: #FAFAFA;
   font-family: 'Satoshi';
   box-sizing: border-box;
+  margin-bottom: 15%;
 
 }
 
@@ -589,4 +592,45 @@ button {
 }
 .gap{
   background-color: #F21000;
+}
+
+footer {
+  background-color: #121111;
+  height: 12rem;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+
+}
+
+footer li {
+  display: flex;
+  margin-inline: 1rem;
+
+}
+.back-pointer{
+  position: fixed;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #121111;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0.15rem solid #352F2F;
+  z-index: 4;
+  padding: 1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+box-shadow: #12111181 0rem 0rem 1rem;
+transition: opacity 0.4s ease;
+}
+
+.section6 span{
+  font-weight: 400;
 }
