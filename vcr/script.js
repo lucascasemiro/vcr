@@ -19,3 +19,29 @@ window.addEventListener('scroll', () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+const menu = document.querySelector('.menu');
+const esc = document.querySelector('.esc');
+const dropdown = document.querySelector('.dropdown');
+const dropdownLinks = document.querySelectorAll('.dropdown a');
+
+menu.addEventListener('click', () => {
+  dropdown.classList.add('open');
+  menu.style.display = 'none';
+  esc.style.display = 'flex';
+});
+
+esc.addEventListener('click', () => {
+  dropdown.classList.remove('open');
+  menu.style.display = 'flex';
+  esc.style.display = 'none';
+});
+
+dropdownLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    dropdown.classList.remove('open');
+    menu.style.display = 'flex';
+    esc.style.display = 'none';
+  });
+});
+
